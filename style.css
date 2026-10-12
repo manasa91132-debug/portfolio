@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6ff;
+    color: #333333;
+    line-height: 1.6;
+}
+
+/* Navigation Bar */
+header {
+    background-color: #191970;
+    padding: 18px 8%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    color: white;
+    font-size: 26px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 22px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffcc70;
+}
+
+/* Home Section */
+.hero {
+    min-height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #191970, #6a5acd);
+    color: white;
+}
+
+.hero-content {
+    max-width: 700px;
+}
+
+.hero h1 {
+    font-size: 44px;
+    margin-bottom: 10px;
+}
+
+.hero h1 span {
+    color: #ffcc70;
+}
+
+.hero h2 {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 28px;
+}
+
+/* Explore More Button */
+.btn {
+    display: inline-block;
+    background-color: #ffcc70;
+    color: #191970;
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: white;
+    transform: translateY(-3px);
+}
+
+/* About, Education and Contact Sections */
+.section {
+    padding: 65px 10%;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 30px;
+    color: #191970;
+    margin-bottom: 25px;
+}
+
+/* Content Cards */
+.card {
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.card p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.card h3 {
+    color: #483d8b;
+    margin-bottom: 15px;
+}
+
+/* Footer */
+footer {
+    background-color: #191970;
+    color: white;
+    text-align: center;
+    padding: 18px;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+/* Responsive Design for Mobile */
+@media screen and (max-width: 600px) {
+    header {
+        padding: 15px 5%;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    nav ul {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+    }
+
+    .hero {
+        min-height: 75vh;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero h2 {
+        font-size: 22px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .section {
+        padding: 45px 6%;
+    }
+
+    .section h2 {
+        font-size: 26px;
+    }
+
+    .card {
+        padding: 20px;
+    }
+}
